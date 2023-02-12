@@ -13,12 +13,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MempoiService {
+public class MemPoiService {
 
     private DataSource dataSource;
 
     @Autowired
-    public MempoiService(DataSource dataSource) {
+    public MemPoiService(DataSource dataSource) {
         this.dataSource = dataSource;
     }
 
