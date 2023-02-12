@@ -1,2 +1,2 @@
 # MemPOI-Spring-Example
-An example project showing some ways to integrate MemPOI and Spring
+An example project showing a simple way to integrate MemPOI and Spring
