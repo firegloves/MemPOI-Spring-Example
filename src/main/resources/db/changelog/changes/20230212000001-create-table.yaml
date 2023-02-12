@@ -1,0 +1,55 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20230212000001
+      author: firegloves
+      changes:
+        - createTable:
+            tableName: test_table
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  name: surname
+                  type: VARCHAR(255)
+        - insert:
+            tableName: test_table
+            columns:
+              - column:
+                  name: id
+                  value: "0"
+              - column:
+                  name: name
+                  value: "John"
+              - column:
+                  name: surname
+                  value: "Doe"
+        - insert:
+            tableName: test_table
+            columns:
+              - column:
+                  name: id
+                  value: "1"
+              - column:
+                  name: name
+                  value: "Eric"
+              - column:
+                  name: surname
+                  value: "Smith"
+        - insert:
+            tableName: test_table
+            columns:
+              - column:
+                  name: id
+                  value: "2"
+              - column:
+                  name: name
+                  value: "Cat"
+              - column:
+                  name: surname
+                  value: "Jones"
